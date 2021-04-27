@@ -44,29 +44,29 @@ data_df["Hour"] = data_df["datetime"].dt.hour
 
 
 # Check the dataset
-print(msn.matrix(data_df))
+#print(msn.matrix(data_df))
 
 # Sort the values by date and time
 data_df.sort_values("datetime", inplace = True)
 
 # Check the dataset after sort
-print(msn.matrix(data_df))
+#print(msn.matrix(data_df))
 
 # Backfill every posted time per ride
 for col in ["SPOSTMIN_dino", "SPOSTMIN_everest", "SPOSTMIN_passage", "SPOSTMIN_safari", "SPOSTMIN_navi"]:
     data_df[col] = data_df.groupby(["Year", "Month", "Day"])[col].bfill()
 
 # Check the dataset after the backfill
-print(msn.matrix(data_df))
+#print(msn.matrix(data_df))
 
 # Check for the missing values
-data_df.info()
+#data_df.info()
 
 # Fill in the remaining values with -999 to show that the ride is closed
 data_df.replace(-999, np.nan, inplace = True)
 
 # Get a visualization of the missing data now that the -999s have been replaced
-print(msn.matrix(data_df))
+#print(msn.matrix(data_df))
 
 # -------------------------------------
 # Set up the Dash application
