@@ -79,7 +79,8 @@ external_stylesheets = [{"href": "https://fonts.googleapis.com/css2?"
                         "rel": "stylesheet"}]
 
 # Create the app and add title
-app = dash.Dash(__name__)
+app = dash.Dash(__name__, external_stylesheets = external_stylesheets)
+server = app.server
 app.title = "Average Past Wait Times for Disney's Animal Kingdom"
 
 # App layout
