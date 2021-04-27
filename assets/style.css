@@ -1,0 +1,89 @@
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    background-color: #969696;
+}
+
+
+.header {
+    background-image: url(/assets/Disney_Night.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 256px;
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-title {
+    color: #ffffff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.header-description {
+    color: #ffffff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin: 4px auto;
+    text-align: center;
+    max-width: 500px;
+}
+
+.wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1024px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 32px;
+}
+
+.card {
+    margin-top: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    max-width: 1024px;
+    margin-bottom: 24px;
+    background-color: #969696;
+    box-shadow: 0 4px 6px 0 rgb(40, 40, 40);
+}
+
+.menu {
+    height: 100px;
+    width: 750px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 24px;
+    margin: -25px auto 0 auto;
+    background-color: #969696;
+    box-shadow: 0 4px 6px 0 rgb(40, 40, 40);
+}
+
+.Select-control {
+    width: 256px;
+    height: 48px;
+    background-color: #969696 !important;
+}
+
+.Select--single > .Select-control .Select-value, .Select-placeholder {
+    line-height: 48px;
+    background-color: #969696;
+    color: #00564d;
+}
+
+.DateInput_input, .is-open > .Select-control {
+  background-color: #969696 !important;
+  color: #00564d !important;
+}
+
+.menu-title {
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #00564d;
+}
